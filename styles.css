@@ -92,6 +92,11 @@ body {
   justify-content: space-between;
 }
 
+.contact-info__block:first-child,
+.contact-info__block:last-child {
+  width: calc(35% - 50px);
+}
+
 .contact-info__block--center {
   justify-content: center;
 }
@@ -120,7 +125,7 @@ body {
 
 .contact-info__item-icon {
   height: 1.1428rem;
-  vertical-align: text-bottom;
+  align-self: center;
 }
 
 .contact-info__avatar {
@@ -174,6 +179,11 @@ body {
 .experiences {
   flex: 1 1 60%;
   margin-right: 50px;
+}
+
+.experiences__text {
+  color: var(--secondary-text-color);
+  text-align: justify;
 }
 
 .experiences__header {
