@@ -106,6 +106,15 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  transition: color 0.2s ease;
+}
+
+.contact-info__item:hover {
+  color: var(--text-decoration-color);
+}
+
+.contact-info__item:hover .contact-info__item-icon path {
+  fill: var(--text-decoration-color);
 }
 
 .contact-info__item:not(:last-child) {
@@ -128,6 +137,11 @@ body {
   align-self: center;
 }
 
+.contact-info__avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .contact-info__avatar {
   border-radius: 50%;
   width: 100px;
@@ -135,6 +149,32 @@ body {
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
+  transition: transform 0.7s ease;
+  cursor: pointer;
+}
+
+.contact-info__avatar-wrapper:hover .contact-info__avatar {
+  transform: rotate(360deg);
+}
+
+.contact-info__avatar-tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-decoration-color);
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.4s;
+  pointer-events: none;
+}
+
+.contact-info__avatar-wrapper:hover .contact-info__avatar-tooltip {
+  opacity: 1;
 }
 
 /* Intro and skills styles */
@@ -173,6 +213,27 @@ body {
 .skills__text {
   color: var(--secondary-text-color);
   text-align: justify;
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills__tag {
+  background: var(--border-color);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--text-decoration-color);
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.skills__tag:hover {
+  background: var(--text-decoration-color);
+  color: #fff;
 }
 
 /* Experience and additional info styles */
@@ -273,4 +334,25 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+/* Hobbies / Interests */
+.resume__block--last {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.hobbies__header {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.hobbies__list {
+  color: var(--secondary-text-color);
+  padding-left: 20px;
+}
+
+.hobbies__list li {
+  margin-bottom: 6px;
 }
