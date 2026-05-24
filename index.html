@@ -12,17 +12,20 @@
         <div class="container">
           <div class="resume__block">
             <h1 class="contact-info__header">Tim Mychka</h1>
-            <h3 class="contact-info__sub-header">Star Full-Stack Developer</h3>
+            <h3 class="contact-info__sub-header">Junior Full-Stack Developer</h3>
 
             <div class="contact_info_container fh">
               <div class="contact-info__block"></div>
 
               <div class="contact-info__block contact-info__block--center">
-                <img
-                  class="contact-info__avatar"
-                  src="assets/avatar.png"
-                  alt="Avatar"
-                />
+                <div class="contact-info__avatar-wrapper">
+                  <img
+                    class="contact-info__avatar"
+                    src="assets/avatar.png"
+                    alt="Avatar"
+                  />
+                  <span class="contact-info__avatar-tooltip">psst… hire me? 👀</span>
+                </div>
               </div>
 
               <div class="contact-info__block">
@@ -49,6 +52,19 @@
                     </svg>
                   </div>
                   <span>LinkedIn</span>
+                </a>
+
+                <a
+                  href="https://github.com/tmychka"
+                  rel="author"
+                  class="contact-info__item"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 390.9 8 244.8 8z"/>
+                    </svg>
+                  </div>
+                  <span>GitHub</span>
                 </a>
 
                 <a
@@ -127,9 +143,8 @@
                 </svg>
               </div>
               <p class="intro_text">
-                I'm Tim, a full-stack developer passionate about building seamless digital experiences from database to UI.
-                With deep expertise across both front-end and back-end technologies, I thrive on architecting scalable systems,
-                solving complex engineering challenges, and turning ambitious ideas into polished, production-ready products.
+                I'm Tim, a Computer Science student who enjoys building things for the web — mostly on the back end, but I'm not afraid of CSS either.
+                I care about clean code, meaningful commit messages, and shipping features that actually work.
               </p>
             </div>
           </div>
@@ -138,9 +153,17 @@
           <div class="resume__block">
             <div class="skills">
               <h3 class="skills__header">Skills</h3>
-              <p class="skills__text">
-                JavaScript, Node.js, React, Problem solving, Team Collaboration
-              </p>
+              <div class="skills__tags">
+                <span class="skills__tag">JavaScript</span>
+                <span class="skills__tag">Node.js</span>
+                <span class="skills__tag">Express.js</span>
+                <span class="skills__tag">React</span>
+                <span class="skills__tag">PostgreSQL</span>
+                <span class="skills__tag">Git</span>
+                <span class="skills__tag">HTML / CSS</span>
+                <span class="skills__tag">REST APIs</span>
+                <span class="skills__tag">Jest</span>
+              </div>
             </div>
           </div>
         </div>
@@ -151,17 +174,19 @@
                 <h3 class="experiences__header">Experience</h3>
                 <div class="experiences__company">
                   <div class="experiences__company-header">
-                    <span class="experiences__company-header-durability">2024-Present</span>
+                    <span class="experiences__company-header-durability">2025-Present</span>
                     <h3 class="experiences__company-header-name">TechStartup</h3>
                   </div>
 
                   <div class="experiences__company-project">
                     <span class="experiences__company-project-role">Back-End Intern</span>
-                    <h3 class="experiences__company-project-name">Internal API Project</h3>
+                    <h3 class="experiences__company-project-name">Customer Data API</h3>
                     <ul class="experiences__company-project-responsibilities">
-                      <li>Built REST API endpoints using Node.js and Express</li>
-                      <li>Wrote unit tests for existing backend services</li>
-                      <li>Participated in code reviews and daily standups</li>
+                      <li>Built and maintained REST API endpoints using Node.js and Express</li>
+                      <li>Wrote unit and integration tests with Jest (80%+ coverage on new endpoints)</li>
+                      <li>Migrated legacy callback-based handlers to async/await</li>
+                      <li>Participated in code reviews and daily standups in an Agile team</li>
+                      <li>Helped document API contracts using OpenAPI / Swagger</li>
                     </ul>
                   </div>
                 </div>
@@ -171,18 +196,31 @@
                 <div class="additional-info__education">
                   <h3 class="additional-info__education-header">Education</h3>
                   <div class="additional-info__education-university">
-                    <span class="additional-info__education-university-durability">2022-Present</span>
+                    <span class="additional-info__education-university-durability">2022 – 2026 (Expected)</span>
                     <h3 class="additional-info__education-university-speciality">Computer Science</h3>
-                    <p class="additional-info__education-university-name">National Technical University</p>
+                    <p class="additional-info__education-university-name">National University of Water and Environmental Engineering, Rivne</p>
                   </div>
                 </div>
 
                 <div class="additional-info__languages">
                   <h3 class="additional-info__languages-header">Languages</h3>
-                  <p class="additional-info__languages-item">English</p>
-                  <p class="additional-info__languages-item">Ukrainian</p>
+                  <p class="additional-info__languages-item">English — B2</p>
+                  <p class="additional-info__languages-item">Ukrainian — Native</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block resume__block--last">
+            <div class="hobbies">
+              <h3 class="hobbies__header">Interests</h3>
+              <ul class="hobbies__list">
+                <li>Competitive programming (Codeforces, LeetCode)</li>
+                <li>Building side projects that probably won't scale</li>
+                <li>Specialty coffee brewing ☕</li>
+                <li>Cycling around Rivne</li>
+              </ul>
             </div>
           </div>
         </div>
